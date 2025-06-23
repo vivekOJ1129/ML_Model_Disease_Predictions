@@ -1,4 +1,3 @@
-
 # 🧠 Disease Prediction from Symptoms
 
 A machine learning-powered web application to predict potential diseases based on user-selected symptoms. The system leverages both **Random Forest** and **Deep Neural Network (DNN)** models for robust and intelligent health predictions.
@@ -61,7 +60,18 @@ The Streamlit web app allows users to:
 - Get instant disease predictions
 - View precautions via Wikipedia link
 
-### 🚀 To Run the App:
+---
+
+## ⚠️ Setup Instructions
+
+> 📁 **IMPORTANT**: Some large files (e.g., model and dataset) are provided in a ZIP archive.
+
+**Before running the app:**
+1. **Extract** the ZIP file into the `disease_prediction_app/` directory.  
+   It contains:
+   - `random_forest_model.pkl`
+   - `Final_Augmented_dataset_Diseases_and_Symptoms.csv`
+2. Then run the Streamlit app using the following command:
 
 ```bash
 streamlit run app.py
@@ -74,10 +84,10 @@ streamlit run app.py
 ```
 disease_prediction_app/
 ├── app.py
-├── random_forest_model.pkl
 ├── dnn_model.keras
 ├── label_encoder.pkl
-├── Final_Augmented_dataset_Diseases_and_Symptoms.csv
+├── random_forest_model.pkl           <- Extracted from ZIP
+├── Final_Augmented_dataset_Diseases_and_Symptoms.csv  <- Extracted from ZIP
 ├── README.md
 ```
 
